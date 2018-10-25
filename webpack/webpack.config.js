@@ -14,5 +14,16 @@ module.exports = {
         filename: 'principal.js',
         //pasta destino do arquivo de saída
         path: __dirname + '/public'
+    },
+    module: {
+        //Regras com um array de loads
+        rules: [{
+            test : /\.css$/,
+            use: [
+                //plugins para leitura de arquivos css
+                'style-loader', //Adiciona o CSS na DOM com a tag <style>
+                'css-loader', //interpretar @import, url()
+            ]
+        }]
     }
 }
