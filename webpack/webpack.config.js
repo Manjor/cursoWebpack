@@ -50,6 +50,9 @@ module.exports = {
                 'css-loader', //interpretar @import, url()
                 'sass-loader',
             ]
+        },{
+            test: /\.(png|svg|jpg|gif|jpeg,xml)$/,
+            use : ['file-loader']
         }]
     }
 }
