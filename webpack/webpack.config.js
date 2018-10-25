@@ -26,12 +26,13 @@ module.exports = {
     module: {
         //Regras com um array de loads
         rules: [{
-            test : /\.css$/,
+            test : /\.s?[ac]ss$/,
             use: [
                 //plugins para leitura de arquivos css
                 MiniCssExtractPlugin.loader, //Extrai o css para um arquivo externo
                 //'style-loader', //Adiciona o CSS na DOM com a tag <style>
                 'css-loader', //interpretar @import, url()
+                'sass-loader',
             ]
         }]
     }
