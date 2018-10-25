@@ -101,7 +101,7 @@ eval("//Modulo padrao usado dentro do Nodejs\r\nmodule.exports = {\r\n    saudac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Pessoa; });\n//export default \r\n//module.exports =\r\nclass Pessoa{\r\n    cumprimentar(){\r\n        return 'Bom Dia'\r\n    }\r\n}\n\n//# sourceURL=webpack:///./src/pessoa.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Pessoa; });\n//export default \r\n//module.exports =\r\n//import './modulos/moduloA'\r\nclass Pessoa{\r\n    cumprimentar(){\r\n        return 'Bom Dia'\r\n    }\r\n}\n\n//# sourceURL=webpack:///./src/pessoa.js?");
 
 /***/ }),
 

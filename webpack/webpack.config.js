@@ -7,5 +7,12 @@ module.exports = {
     //no modo producao irá realizar a minimacao do codigo main.js na pasta dist
     mode: 'development',
     //Entrada raiz, serpá principal.js nesse modulo
-    entry: './src/principal.js'
+    entry: './src/principal.js',
+    //Configura o nome e pasta do(s) arquivo(s) de saída
+    output:{
+        //nome do arquivo
+        filename: 'principal.js',
+        //pasta destino do arquivo de saída
+        path: __dirname + '/public'
+    }
 }
