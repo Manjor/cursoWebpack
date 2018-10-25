@@ -23,6 +23,10 @@ module.exports = {
         //pasta destino do arquivo de saída
         path: __dirname + '/public'
     },
+    devServer:{
+        contentBase: './public',
+        port: 8080
+    },
     optimization: {
         minimizer:[
             new UglifyPlugin({
